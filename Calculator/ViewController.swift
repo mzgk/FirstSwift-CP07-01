@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum Operator {
+    case undefined          // 未定義
+    case addition           // 加法（＋）
+    case subtraction        // 減法（－）
+    case multiplication     // 乗法（×）
+    case division           // 除法（÷）
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
