@@ -90,6 +90,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func allClearButtonTapped(_ sender: UIButton) {
+        firstValue = 0
+        secondValue = 0
+        currentOperator = .undefined
+        label.text = "0"
     }
 }
 
