@@ -57,6 +57,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func operatorButtonTapped(_ sender: UIButton) {
+        switch sender.currentTitle! {
+        case "+":
+            currentOperator = .addition
+        case "-":
+            currentOperator = .subtraction
+        case "×":
+            currentOperator = .multiplication
+        case "÷":
+            currentOperator = .division
+        default:
+            currentOperator = .undefined
+        }
+
+        print(currentOperator)
     }
 
     @IBAction func equalButtonTapped(_ sender: UIButton) {
