@@ -1,19 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Courier.ttc">
+            <string>Courier</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nkf-rW-gZd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-Yz-gZb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="64"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aPy-0Z-ad6">
+                                        <rect key="frame" x="0.0" y="129.5" width="375" height="129.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybb-2s-S4O">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="7"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-Bx-TfP">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="8"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-nW-wqc">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="9"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBK-fh-3J0">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="÷"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qtr-qR-4is">
+                                        <rect key="frame" x="0.0" y="259" width="375" height="129"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3j-av-5nf">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="129"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="4"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-Fo-Bnj">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="129"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-7F-iKE">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="129"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="6"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGP-c4-vgj">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="129"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="×"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MxZ-0E-fcv">
+                                        <rect key="frame" x="0.0" y="388" width="375" height="129.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGM-sR-YsF">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="1"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-2n-0em">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="2"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-h0-59d">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="3"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaZ-0f-qmx">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="-"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wFW-Dq-aaB">
+                                        <rect key="frame" x="0.0" y="517.5" width="375" height="129.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhU-vc-8ME">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="AC"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru1-mV-eol">
+                                                <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="0"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odj-A0-zRa">
+                                                <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="="/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WW-9J-n87">
+                                                <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
+                                                <state key="normal" title="+"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nkf-rW-gZd" secondAttribute="trailing" id="8kj-RS-Twd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nkf-rW-gZd" secondAttribute="bottom" id="Uoh-CW-3Bu"/>
+                            <constraint firstItem="Nkf-rW-gZd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b6v-bg-5R9"/>
+                            <constraint firstItem="Nkf-rW-gZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gsb-Vg-aoC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
