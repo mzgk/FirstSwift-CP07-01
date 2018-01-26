@@ -53,6 +53,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func operatorButtonTapped(_ sender: UIButton) {
+        // ＝をタップせずに、続けて演算を行う
+        if secondValue != 0 {
+            self.equalButtonTapped(sender)
+        }
+
         switch sender.currentTitle! {
         case "+":
             currentOperator = .addition
