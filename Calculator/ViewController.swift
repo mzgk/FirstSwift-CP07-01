@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - User Action
+    @IBAction func numberButtonTapped(_ sender: UIButton) {
+    }
 
+    @IBAction func operatorButtonTapped(_ sender: UIButton) {
+    }
+
+    @IBAction func equalButtonTapped(_ sender: UIButton) {
+    }
+
+    @IBAction func allClearButtonTapped(_ sender: UIButton) {
+    }
 }
 

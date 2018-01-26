@@ -39,21 +39,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LuO-p8-r95"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4n-Bx-TfP">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QnM-QM-rkY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-nW-wqc">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Uc-QV-taf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBK-fh-3J0">
                                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="÷"/>
+                                                <connections>
+                                                    <action selector="operatorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEW-qg-5ZY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -64,21 +76,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="129"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8B-uF-aQ7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltE-Fo-Bnj">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="129"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rJD-3t-efK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-7F-iKE">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="129"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maQ-GZ-ocR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGP-c4-vgj">
                                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="129"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="×"/>
+                                                <connections>
+                                                    <action selector="operatorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65w-Kr-kBa"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -89,21 +113,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="1"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whu-48-mfL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPj-2n-0em">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETL-se-GOv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEr-h0-59d">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4l-7x-MSk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uaZ-0f-qmx">
                                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="operatorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-S3-ZvK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -114,21 +150,33 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="AC"/>
+                                                <connections>
+                                                    <action selector="allClearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bI2-Eg-UBR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru1-mV-eol">
                                                 <rect key="frame" x="94" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="0"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMh-EE-B4C"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odj-A0-zRa">
                                                 <rect key="frame" x="187.5" y="0.0" width="94" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="="/>
+                                                <connections>
+                                                    <action selector="equalButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2e-8o-0dp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WW-9J-n87">
                                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="129.5"/>
                                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="36"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="operatorButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbN-Cx-zf0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -144,6 +192,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="EtS-Yz-gZb" id="bFG-45-oeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
