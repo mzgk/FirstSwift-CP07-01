@@ -50,10 +50,6 @@ class ViewController: UIViewController {
             secondValue = secondValue * 10 + value
             label.text = String(secondValue)
         }
-
-        print("value : \(value)")
-        print("first : \(firstValue)")
-        print("second : \(secondValue)")
     }
 
     @IBAction func operatorButtonTapped(_ sender: UIButton) {
@@ -69,11 +65,28 @@ class ViewController: UIViewController {
         default:
             currentOperator = .undefined
         }
-
-        print(currentOperator)
     }
 
     @IBAction func equalButtonTapped(_ sender: UIButton) {
+        var value = 0
+
+        switch currentOperator {
+        case .addition:
+            value = firstValue + secondValue
+        case .subtraction:
+            value = firstValue - secondValue
+        case .multiplication:
+            value = firstValue * secondValue
+        case .division:
+            value = firstValue / secondValue
+        default:
+            value = firstValue
+        }
+
+        label.text = String(value)
+        firstValue = 0
+        secondValue = 0
+        currentOperator = .undefined
     }
 
     @IBAction func allClearButtonTapped(_ sender: UIButton) {
