@@ -84,7 +84,7 @@ class ViewController: UIViewController {
         }
 
         label.text = String(value)
-        firstValue = 0
+        firstValue = value      // 結果から続けて演算を行う
         secondValue = 0
         currentOperator = .undefined
     }
