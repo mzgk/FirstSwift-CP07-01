@@ -23,7 +23,7 @@ class ViewController: UIViewController {
 
     // MARK: - Property
     var firstValue = 0
-    var secondValue = 0
+    var secondValue: Int!   // 暗黙的アンラップ -> 演算子ボタンでの連続計算をするための判断のため
     var currentOperator = Operator.undefined
 
     // MARK: - Life Cycle
@@ -47,14 +47,14 @@ class ViewController: UIViewController {
             label.text = String(firstValue)
         }
         else {
-            secondValue = secondValue * 10 + value
+            secondValue = (secondValue ?? 0) * 10 + value // nilなら0を代入して計算
             label.text = String(secondValue)
         }
     }
 
     @IBAction func operatorButtonTapped(_ sender: UIButton) {
         // ＝をタップせずに、続けて演算を行う
-        if secondValue != 0 {
+        if let _ = secondValue {
             self.equalButtonTapped(sender)
         }
 
@@ -73,6 +73,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func equalButtonTapped(_ sender: UIButton) {
+        // ２つ目の数字が入力されてなければ処理しない
+        guard let _ = secondValue else {
+            return
+        }
+
         var value = 0
 
         switch currentOperator {
@@ -83,22 +88,31 @@ class ViewController: UIViewController {
         case .multiplication:
             value = firstValue * secondValue
         case .division:
-            value = firstValue / secondValue
-        default:
-            value = firstValue
+            if secondValue != 0 {
+                value = firstValue / secondValue
+            }
+            else {  // 0除算
+                label.text = "Divide by 0."
+                firstValue = 0
+                secondValue = nil
+                currentOperator = .undefined
+                return
+            }
+        case .undefined:
+            return  // 演算子ボタンが押されてない場合は処理しない
         }
 
         label.text = String(value)
         firstValue = value      // 結果から続けて演算を行う
-        secondValue = 0
+        secondValue = nil
         currentOperator = .undefined
     }
 
     @IBAction func allClearButtonTapped(_ sender: UIButton) {
         firstValue = 0
-        secondValue = 0
+        secondValue = nil
         currentOperator = .undefined
-        label.text = "0"
+        label.text = ""
     }
 }
 
